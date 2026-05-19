@@ -4,13 +4,31 @@
 
 ## 使用方式
 
-### macOS / Linux（推荐一键安装）
+### 一键安装 Claude Code + 配置 DeepSeek（推荐）
+
+自动安装 Node.js、Claude Code，并注入 DeepSeek 环境变量：
+
+**macOS / Linux：**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/blazejiang/claude-env-injector/main/setup.sh | bash
+```
+
+**Windows PowerShell：**
+
+```powershell
+irm https://raw.githubusercontent.com/blazejiang/claude-env-injector/main/setup.ps1 | iex
+```
+
+### 仅配置 DeepSeek（Claude Code 已安装）
+
+**macOS / Linux：**
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/blazejiang/claude-env-injector/main/install.sh | bash
 ```
 
-### Windows PowerShell
+**Windows PowerShell：**
 
 ```powershell
 irm https://raw.githubusercontent.com/blazejiang/claude-env-injector/main/install.ps1 | iex
@@ -24,12 +42,42 @@ npx github:blazejiang/claude-env-injector
 
 ## 运行效果
 
-运行后会提示输入你的 DeepSeek API Key：
+### 一键安装（setup.sh / setup.ps1）
+
+运行后自动完成 Node.js 安装、Claude Code 安装、DeepSeek 配置：
+
+```
+╔══════════════════════════════════════════════════╗
+║   🚀 Claude Code + DeepSeek 一键安装脚本       ║
+╚══════════════════════════════════════════════════╝
+
+🔑 请输入你的 DeepSeek API Key: sk-xxxxxxxxxxxx
+
+━━━ 步骤 1/3: 检查 Node.js ━━━
+✅ Node.js v22.12.0 已安装
+
+━━━ 步骤 2/3: 安装 Claude Code ━━━
+📦 正在安装 Claude Code...
+✅ Claude Code 安装成功
+
+━━━ 步骤 3/3: 配置 DeepSeek ━━━
+✅ 已将 use-deepseek 函数注入到 ~/.zshrc
+
+╔══════════════════════════════════════════════════╗
+║              🎉 安装完成！                      ║
+╚══════════════════════════════════════════════════╝
+
+  1️⃣  加载配置:     source ~/.zshrc
+  2️⃣  切换 DeepSeek: use-deepseek
+  3️⃣  启动 Claude:   claude
+```
+
+### 仅配置 DeepSeek（install.sh / install.ps1）
 
 ```
 🚀 Claude Env Injector — DeepSeek 环境变量注入工具
 
-? 🔑 请输入你的 DeepSeek API Key: sk-xxxxxxxxxxxx
+🔑 请输入你的 DeepSeek API Key: sk-xxxxxxxxxxxx
 
 ✅ 已成功将 use-deepseek 函数注入到 ~/.zshrc
 
