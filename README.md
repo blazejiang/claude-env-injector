@@ -4,25 +4,22 @@
 
 ## 使用方式
 
-### 方式一：curl 一键安装（推荐，零依赖）
+### macOS / Linux（推荐一键安装）
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/blazejiang/claude-env-injector/main/install.sh | bash
 ```
 
-### 方式二：npx 直接运行
+### Windows PowerShell
+
+```powershell
+irm https://raw.githubusercontent.com/blazejiang/claude-env-injector/main/install.ps1 | iex
+```
+
+### npx 直接运行（需要 Node.js）
 
 ```bash
 npx github:blazejiang/claude-env-injector
-```
-
-### 方式三：本地运行
-
-```bash
-git clone https://github.com/jiangaoxiang/claude-env-injector.git
-cd claude-env-injector
-npm install
-node index.js
 ```
 
 ## 运行效果
