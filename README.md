@@ -7,7 +7,7 @@
 ### 方式一：npx 直接运行（推荐）
 
 ```bash
-npx claude-env-injector
+npx github:blazejiang/claude-env-injector
 ```
 
 ### 方式二：全局安装
