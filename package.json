@@ -1,0 +1,15 @@
+{
+  "name": "claude-env-injector",
+  "version": "1.0.0",
+  "description": "轻量级跨平台 CLI 工具，将 DeepSeek API 环境变量注入到终端配置文件",
+  "type": "module",
+  "bin": {
+    "claude-env-injector": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "inquirer": "^12.0.0"
+  }
+}
