@@ -4,17 +4,16 @@
 
 ## 使用方式
 
-### 方式一：npx 直接运行（推荐）
+### 方式一：curl 一键安装（推荐，零依赖）
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/blazejiang/claude-env-injector/main/install.sh | bash
+```
+
+### 方式二：npx 直接运行
 
 ```bash
 npx github:blazejiang/claude-env-injector
-```
-
-### 方式二：全局安装
-
-```bash
-npm install -g claude-env-injector
-claude-env-injector
 ```
 
 ### 方式三：本地运行
